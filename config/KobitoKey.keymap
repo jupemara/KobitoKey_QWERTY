@@ -93,6 +93,14 @@
     flavor = "balanced";
 };
 
+&lt 1 LANG2 {
+    tapping-term-ms = <175>;
+};
+
+&lt 2 LANG1 {
+    tapping-term-ms = <175>;
+};
+
 &mt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
