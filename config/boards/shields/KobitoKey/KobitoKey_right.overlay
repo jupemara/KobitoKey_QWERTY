@@ -33,8 +33,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        /* 200–3200（200 刻み）。高いほど敏感・速い。振れやすいときは下げる */
-        cpi = <800>;
+        cpi = <400>;
         
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
