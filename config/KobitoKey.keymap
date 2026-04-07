@@ -67,6 +67,16 @@
         };
 
         layer3 {
+            label = "MEDIA";
+            bindings = <
+&bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2  &kp K_VOL_DN &kp K_VOL_UP    &kp C_AC_SCROLL_DOWN &kp C_AC_SCROLL_UP &trans       &trans          &kp LG(BSPC)
+&trans       &kp LG(RS(RC(3))) &kp LG(RS(3)) &mkp MB1     &mkp MB2        &mmv MOVE_LEFT       &mmv MOVE_DOWN     &mmv MOVE_UP &mmv MOVE_RIGHT &trans
+&trans       &trans            &trans        &kp C_PREV   &kp C_NEXT      &mkp MB1             &mkp MB2           &mkp MB3     &trans          &trans
+&bt BT_CLR   &bt BT_CLR_ALL    &trans        &trans       &kp C_PP        &mkp MB1             &mkp MB2           &mkp MB3     &trans          &to 0
+            >;
+        };
+
+        layer4 {
             label = "MOUSE";
             bindings = <
 &bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2  &kp K_VOL_DN &kp K_VOL_UP    &kp C_AC_SCROLL_DOWN &kp C_AC_SCROLL_UP &trans       &trans          &kp LG(BSPC)
