@@ -40,7 +40,7 @@
 &q_grave_tab &kp W        &kp E        &kp R        &kp T        &kp Y            &kp U       &kp I         &kp O      &kp P
 &kp A        &kp S        &kp D        &kp F        &kp G        &kp H            &kp J       &kp K         &kp L      &mt ENTER LALT
 &kp Z        &kp X        &kp C        &kp V        &kp B        &kp N            &kp M       &kp COMMA     &kp DOT    &kp SLASH
-&kp K_VOL_DN &kp K_VOL_UP &mt LCMD ESC &lt 1 LANG1  &kp SPACE    &mt RSHIFT BSPC  &lt 2 LANG2 &mt RCTRL TAB &kp C_PREV &kp C_NEXT
+&kp K_VOL_DN &kp K_VOL_UP &mt LCMD ESC &lt 1 LANG2  &kp SPACE    &mt RSHIFT BSPC  &lt 2 LANG1 &mt RCTRL TAB &kp C_PREV &kp C_NEXT
             >;
         };
 
@@ -67,10 +67,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2  &kp K_VOL_DN &kp K_VOL_UP    &kp C_AC_SCROLL_DOWN &kp C_AC_SCROLL_UP &trans   &trans &kp LG(BSPC)
-&trans       &kp LG(RS(RC(3))) &kp LG(RS(3)) &mkp MB1     &mkp MB2        &trans               &trans             &trans   &trans &trans
-&trans       &trans            &trans        &kp C_PREV   &kp C_NEXT      &mkp MB1             &mkp MB2           &mkp MB3 &trans &trans
-&bt BT_CLR   &bt BT_CLR_ALL    &trans        &trans       &kp C_PP        &mkp MB1             &mkp MB2           &mkp MB3 &trans &to 0
+&bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2  &kp K_VOL_DN &kp K_VOL_UP    &kp C_AC_SCROLL_DOWN &kp C_AC_SCROLL_UP &trans       &trans           &kp LG(BSPC)
+&trans       &kp LG(RS(RC(3))) &kp LG(RS(3)) &mkp MB1     &mkp MB2        &mmv MOVE_LEFT       &mmv MOVE_DOWN     &mmv MOVE_UP &tmmv MOVE_RIGHT &trans
+&trans       &trans            &trans        &kp C_PREV   &kp C_NEXT      &mkp MB1             &mkp MB2           &mkp MB3     &trans           &trans
+&bt BT_CLR   &bt BT_CLR_ALL    &trans        &trans       &kp C_PP        &mkp MB1             &mkp MB2           &mkp MB3     &trans           &to 0
             >;
         };
     };
