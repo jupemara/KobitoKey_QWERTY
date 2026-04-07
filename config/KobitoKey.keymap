@@ -20,14 +20,14 @@
         cmd_q_grave: cmd_q_grave {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>, &kp Q>;
+            bindings = <&kp GRAVE>, <&kp Q>;
             mods = <(MOD_LGUI | MOD_RGUI)>;
         };
         /* CTRL 押下中は Q => TAB */
-        cmd_q_grave: cmd_q_grave {
+        q_grave_tab: q_grave_tab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, &kp Q>;
+            bindings = <&kp TAB>, <&cmd_q_grave>;
             mods = <(MOD_LCTRL | MOD_RCTRL)>;
         };
     };
@@ -37,7 +37,7 @@
 
         default_layer {
             bindings = <
-&cmd_q_grave &kp W        &kp E        &kp R        &kp T        &kp Y     &kp U       &kp I           &kp O      &kp P
+&q_grave_tab &kp W        &kp E        &kp R        &kp T        &kp Y     &kp U       &kp I           &kp O      &kp P
 &kp A        &kp S        &kp D        &kp F        &kp G        &kp H     &kp J       &kp K           &kp L      &mt ENTER LALT
 &kp Z        &kp X        &kp C        &kp V        &kp B        &kp N     &kp M       &kp COMMA       &kp DOT    &kp SLASH
 &kp K_VOL_DN &kp K_VOL_UP &mt LCMD ESC &lt 2 LANG1  &kp SPACE    &kp BSPC  &lt 3 LANG2 &mt RCTRL LANG2 &kp C_PREV &kp C_NEXT
