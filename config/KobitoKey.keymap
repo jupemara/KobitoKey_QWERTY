@@ -20,15 +20,15 @@
         cmd_q_grave: cmd_q_grave {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>, <&kp Q>;
+            bindings = <&kp Q &kp GRAVE>;
             mods = <(MOD_LGUI | MOD_RGUI)>;
         };
         /* CTRL 押下中は Q => TAB */
         q_grave_tab: q_grave_tab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&cmd_q_grave>;
-            mods = <(MOD_LCTRL | MOD_RCTRL)>;
+            bindings = <&cmd_q_grave &kp TAB>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
         };
     };
 
