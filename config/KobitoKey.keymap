@@ -48,9 +48,9 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp N1     &kp N2  &kp N3  &kp N4     &kp N5    &kp N6     &kp N7     &kp N8    &kp N9     &kp N0
-&kp EQUAL  &kp N4  &kp N5  &kp N6     &trans    &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans     &kp N7  &kp N8  &kp N9     &trans    &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &trans
+&kp N1     &kp N2     &kp N3     &kp N4     &kp N5        &kp N6          &kp N7      &kp N8       &kp N9        &kp N0
+&kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)    &kp LEFT        &kp DOWN    &kp UP       &kp RIGHT     &kp SEMI
+&kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)    &kp RS(RC(TAB)) &kp RC(TAB) &kp RC(LEFT) &kp RC(RIGHT) &BSLH
 &trans     &trans  &trans  &kp LSHFT  &trans    &trans     &trans     &trans    &trans     &trans
             >;
         };
