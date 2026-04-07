@@ -79,10 +79,10 @@
         layer4 {
             label = "MOUSE";
             bindings = <
-&none  &none  &none  &none    &none        &mkp MB1 &mkp MB2 &mkp MB3 &trans &trans
-&trans &trans &trans &trans   &trans       &trans   &trans   &trans   &trans &trans
-&trans &trans &trans &trans   &trans       &mkp MB1 &mkp MB2 &mkp MB3 &trans &trans
-&to 0  &to 0  &trans &mkp MB2 &mkp MB1     &mkp MB1 &mkp MB2 &mkp MB3 &to 0  &to 0
+&none  &none  &none  &none  &none        &mkp MB1 &mkp MB2 &mkp MB3 &trans &trans
+&trans &trans &trans &trans &trans       &trans   &trans   &trans   &trans &trans
+&trans &trans &trans &trans &trans       &mkp MB1 &mkp MB2 &mkp MB3 &trans &trans
+&to 0  &to 0  &trans &trans &mkp MB1     &mkp MB1 &mkp MB2 &mkp MB3 &to 0  &to 0
             >;
         };
     };
