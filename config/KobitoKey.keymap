@@ -46,10 +46,10 @@
 
         default_layer {
             bindings = <
-&q_grave_tab &kp W        &kp E        &kp R        &kp T        &kp Y            &kp U       &kp I         &kp O      &kp P
-&kp A        &kp S        &kp D        &kp F        &kp G        &kp H            &kp J       &kp K         &kp L      &mt LALT ENTER
-&kp Z        &kp X        &kp C        &kp V        &kp B        &kp N            &kp M       &kp COMMA     &kp DOT    &kp SLASH
-&kp K_VOL_DN &kp K_VOL_UP &mt LCMD ESC &lt_150 1 LANG2  &kp SPACE    &mt RSHIFT BSPC  &lt_150 2 LANG1 &mt RCTRL TAB &kp C_PREV &kp C_NEXT
+&q_grave_tab &kp W        &kp E        &kp R            &kp T        &kp Y            &kp U           &kp I         &kp O        &kp P
+&kp A        &kp S        &kp D        &kp F            &kp G        &kp H            &kp J           &kp K         &kp L        &mt LALT ENTER
+&kp Z        &kp X        &kp C        &kp V            &kp B        &kp N            &kp M           &kp COMMA     &kp DOT      &kp SLASH
+&kp K_VOL_DN &kp K_VOL_UP &mt LCMD ESC &lt_150 1 LANG2  &kp SPACE    &mt RSHIFT BSPC  &lt_150 2 LANG1 &mt RCTRL TAB &kp K_VOL_DN &kp K_VOL_UP
             >;
         };
 
@@ -89,7 +89,7 @@
 &none  &none  &none  &none  &none        &mkp MB1 &mkp MB2 &mkp MB3 &trans &trans
 &trans &trans &trans &trans &trans       &trans   &trans   &trans   &trans &trans
 &trans &trans &trans &trans &trans       &mkp MB1 &mkp MB2 &mkp MB3 &trans &trans
-&to 0  &to 0  &trans &trans &trans       &trans   &trans   &trans   &to 0  &to 0
+&to 0  &to 0  &trans &to 0  &mkp MB1     &mkp MB2 &to 0    &trans   &to 0  &to 0
             >;
         };
     };
