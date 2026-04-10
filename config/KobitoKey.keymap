@@ -29,7 +29,7 @@
         q_grave_tab: q_grave_tab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&cmd_q_grave &kp LC(TAB)>;
+            bindings = <&cmd_q_grave &kp RC(TAB)>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
         lt_150: lt_150 {
