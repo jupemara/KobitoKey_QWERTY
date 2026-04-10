@@ -23,7 +23,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp Q &kp GRAVE>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
         /* Ctrl+Q => Ctrl+Tab */
         q_grave_tab: q_grave_tab {
@@ -31,6 +32,7 @@
             #binding-cells = <0>;
             bindings = <&cmd_q_grave &kp TAB>;
             mods = <(MOD_RCTL)>;
+            keep-mods = <(MOD_RCTL)>;
         };
         lt_150: lt_150 {
             compatible = "zmk,behavior-hold-tap";
