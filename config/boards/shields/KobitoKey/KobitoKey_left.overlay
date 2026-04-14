@@ -37,7 +37,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <500>;
+        cpi = <400>;
 
 
         evt-type = <INPUT_EV_REL>;
@@ -69,7 +69,7 @@
     input-processors =
             <&sensor_rotation_left>,
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 8>,
+            <&zip_scroll_scaler 1 12>,
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
     };
 
